@@ -30,14 +30,9 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
 
 ### Resultado esperado:
 
-Listado de usuarios
-
 <a href="./assets/UserList.jpg">
   <img src="./assets/UserList.jpg" width="150">
-</a>
-
-Detalle de Usuario
-
+</a>&nbsp;
 <a href="./assets/UserDetail.jpg">
   <img src="./assets/UserDetail.jpg" width="150">
 </a>
