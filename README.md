@@ -20,20 +20,32 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
   - Metodo: GET
   - URL: https://reqres.in/api/users
   - Query params:
-  ```ts
-  page: number;
-  per_page: number;
-  ```
+    ```ts
+    page: number;
+    per_page: number;
+    ```
 - Detalle de usuario: Endpoint con los datos de un usuario especificado en la url.
   - Metodo: GET
   - URL: https://reqres.in/api/users/{id}
 
 ### Resultado esperado:
 
+Listado de usuarios
+
+<a href="./assets/UserList.jpg">
+  <img src="./assets/UserList.jpg" width="150">
+</a>
+
+Detalle de Usuario
+
+<a href="./assets/UserDetail.jpg">
+  <img src="./assets/UserDetail.jpg" width="150">
+</a>
+
 ### Requerimientos:
 
 - Utilizar Functional Components o Class componentes.
-- Crear un state de Redux **users** el cual tenga el listado de usuarios
+- Crear un state de Redux **users** el cual tenga el listado de usuarios o lo que creas necesarios.
 - Crear dos action thunk. Uno que realice el fetch del listado de usuarios en base a unos parametros de paginado. Ej:
   ```js
   const getUsersThunk = (page, perPage) => {
@@ -76,4 +88,8 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
 - Lifecycle de componentes: Utilizar correctamente las instancias de renderizado de los componentes. NO USAR METODOS DEPRECADOS.
 - Atomicidad de componentes: Los componentes hijos deben contener la menor cantidad de lógica posible y realizar un renderizado/actión específica.
 - Utilización correcta de estilos: Especialmente en la maquetación de componentes.
-- Escalado de componentes: Utilizar [react-native-size-matters](https://github.com/nirsky/react-native-size-matters) y aplicar su esclado horizontal o vertical segun sea necesario.
+- Escalado de componentes: Utilizar [react-native-size-matters](https://github.com/nirsky/react-native-size-matters) y aplicar su escalado horizontal o vertical segun sea necesario.
+
+### Consideraciones opcionales
+
+- Atomicidad de commits en el repositorio
