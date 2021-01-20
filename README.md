@@ -58,7 +58,7 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
 
   ```jsx
   <FlatList
-    renderItem={({item}) => (
+    renderItem={({ item }) => (
       <TouchableOpacity onPress={handlePressUser}>...</TouchableOpacity>
     )}
   />
@@ -70,8 +70,8 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
 
   ```js
   const handlePressUser = () => {
-    props.navigation.navigate('UserDetail', {
-      id: 'el-id-del-usuario',
+    props.navigation.navigate("UserDetail", {
+      id: "el-id-del-usuario",
     });
   };
   ```
