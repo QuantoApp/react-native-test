@@ -10,5 +10,12 @@ export default StyleSheet.create({
     alignItems: 'center',
     paddingLeft: 10,
     color: '#050404'
+  },
+  emailStyle:{
+    color: '#58D5D5',
+    fontSize: 20   
+  },
+  nameStyle:{
+    fontSize: 60  
   }
 });

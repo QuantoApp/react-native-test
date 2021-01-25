@@ -6,6 +6,21 @@ import userStyles from './styles';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../../styles/styles';
 
+function GoToButton({ screenName , user }) {
+    const navigation = useNavigation();
+    const { id } = user;
+    return (
+      <Button
+        type="clear" 
+        title="ver" 
+        titleStyle={{color:'black'}}
+        onPress={() => navigation.navigate(screenName,{
+            userId: id
+        })}
+      />
+    );
+}
+
 const itemRender = ({item}) => {
 
   return (
@@ -20,6 +35,8 @@ const itemRender = ({item}) => {
             <Text style={userStyles.ratingText}>{item.email}</Text>
           </View>
         </ListItem.Content>
+        
+        <GoToButton screenName="Detalle de usuario" user={item}/>
       </ListItem>
   )};
 
