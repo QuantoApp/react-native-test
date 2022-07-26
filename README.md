@@ -10,7 +10,7 @@ Requerimientos y la Evaluación.
 
 ## Listado de Usuarios
 
-> App en React Native con React Hooks/Redux/Redux-thunk/React Navigation
+> App en React Native 0.68.2 con React Hooks/Redux/Redux-thunk/React Navigation
 
 Primeramente, debes instalar (si no lo tienes aún) React Native en tu computadora, siguiendo los pasos de su [página oficial](https://reactnative.dev/docs/environment-setup) utilizando **react-native-cli**.
 
@@ -43,20 +43,19 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
 - Utilizar Functional Components.
 - Utilizar React Hooks.
 - Obtener y manejar la informacion de usuarios mediante redux y redux-thunks.
-- Dibjar el listado de usuarios mediante el componente [FlatList de React native](https://reactnative.dev/docs/flatlist).
+- Dibujar el listado de usuarios mediante el componente [FlatList de React native](https://reactnative.dev/docs/flatlist).
 - Al presionar en un registro, redirigir a una nueva pantalla con los detalles del usuario presionado (como en la imagen de la derecha mostrado más arriba).
-- Para la navegacion, utilizar los hooks [React Navigation](https://reactnavigation.org/) en su version 5.X.
+- Para la navegacion, utilizar los hooks [React Navigation](https://reactnavigation.org/) en su version 6.X.
 - Mostrar adecuadamente informacion del estado de una solicitud asīncrona al usuario, es decir, manejar los posibles estados de la solicitud: en proceso, fallido, obtenido correctamente.
 
 ### Evaluación:
 
 - Lifecycle de componentes: Utilizar correctamente las instancias de renderizado de los componentes. NO USAR METODOS DEPRECADOS.
 - Atomicidad de componentes: Los componentes hijos deben contener la menor cantidad de lógica posible y realizar un renderizado/acción específica.
+- Utilizar correctamente Hooks.
+- Optimizar al máximo el componente FlatList de React Native.
 - Utilización correcta de estilos: Especialmente en la maquetación de componentes.
 - Escalado de componentes: Utilizar [react-native-size-matters](https://github.com/nirsky/react-native-size-matters) y aplicar su escalado horizontal o vertical segun sea necesario.
 - Buena estructura del proyecto, con la ideología de un posible crecimiento en el mismo.
-
-### Consideraciones opcionales
-
 - Atomicidad de commits en el repositorio.
 - Agregar Unit Test con Snapshots en los componentes.
